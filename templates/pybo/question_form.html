@@ -19,7 +19,7 @@
     <!--오류 표시 End -->
     <div class="form-group">
         <label for="subject">제목</label>
-        <input type="text" class="form-control" name="subject" id="subject" value="{{ form.subject.value default_if_none:'' }}">
+        <input type="text" class="form-control" name="subject" id="subject" value="{{ form.subject.value|default_if_none:'' }}">
     </div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
